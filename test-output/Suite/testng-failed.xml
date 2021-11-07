@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="group filter(failed)">
+    <classes>
+      <class name="com.nurseryadministrator.testscript.GroupListFilter">
+        <methods>
+          <include name="filterGroup"/>
+          <include name="testReportResult"/>
+          <include name="start"/>
+          <include name="initialize"/>
+          <include name="signOut"/>
+          <include name="tearDown"/>
+          <include name="filterByNameAndStatus"/>
+        </methods>
+      </class> <!-- com.nurseryadministrator.testscript.GroupListFilter -->
+    </classes>
+  </test> <!-- group filter(failed) -->
+</suite> <!-- Failed suite [Suite] -->

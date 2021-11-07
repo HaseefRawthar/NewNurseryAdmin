@@ -1,0 +1,229 @@
+<html>
+<head>
+<title>TestNG:  Student List</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Student List</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Sep 14 16:43:12 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>91 seconds (91232 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.GroupList.activateGroup()'><b>activateGroup</b><br>Test class: com.nurseryadministrator.testscript.GroupList</td>
+<td></td>
+<td>7</td>
+<td>com.nurseryadministrator.testscript.GroupList@4efc180e</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.StudentList.activateStudent()'><b>activateStudent</b><br>Test class: com.nurseryadministrator.testscript.StudentList</td>
+<td></td>
+<td>8</td>
+<td>com.nurseryadministrator.testscript.StudentList@611889f4</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.AddGroup.addBabiesGroup()'><b>addBabiesGroup</b><br>Test class: com.nurseryadministrator.testscript.AddGroup</td>
+<td></td>
+<td>6</td>
+<td>com.nurseryadministrator.testscript.AddGroup@32b260fa</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.AddGroup.addPreKGGroup()'><b>addPreKGGroup</b><br>Test class: com.nurseryadministrator.testscript.AddGroup</td>
+<td></td>
+<td>6</td>
+<td>com.nurseryadministrator.testscript.AddGroup@32b260fa</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.AddStudent.addStudent()'><b>addStudent</b><br>Test class: com.nurseryadministrator.testscript.AddStudent</td>
+<td></td>
+<td>29</td>
+<td>com.nurseryadministrator.testscript.AddStudent@28f2a10f</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.AddGroup.addToddlersGroup()'><b>addToddlersGroup</b><br>Test class: com.nurseryadministrator.testscript.AddGroup</td>
+<td></td>
+<td>7</td>
+<td>com.nurseryadministrator.testscript.AddGroup@32b260fa</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.AddGroup.assignStudentsAndEmployees()'><b>assignStudentsAndEmployees</b><br>Test class: com.nurseryadministrator.testscript.AddGroup</td>
+<td></td>
+<td>26</td>
+<td>com.nurseryadministrator.testscript.AddGroup@383bfa16</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.GroupList.deactivateGroup()'><b>deactivateGroup</b><br>Test class: com.nurseryadministrator.testscript.GroupList</td>
+<td></td>
+<td>8</td>
+<td>com.nurseryadministrator.testscript.GroupList@4efc180e</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.StudentList.deactivateStudent()'><b>deactivateStudent</b><br>Test class: com.nurseryadministrator.testscript.StudentList</td>
+<td></td>
+<td>7</td>
+<td>com.nurseryadministrator.testscript.StudentList@611889f4</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.GroupList.editAndViewGroupDetails()'><b>editAndViewGroupDetails</b><br>Test class: com.nurseryadministrator.testscript.GroupList</td>
+<td></td>
+<td>11</td>
+<td>com.nurseryadministrator.testscript.GroupList@4efc180e</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.LogIn.invalidCredentials()'><b>invalidCredentials</b><br>Test class: com.nurseryadministrator.testscript.LogIn</td>
+<td></td>
+<td>6</td>
+<td>com.nurseryadministrator.testscript.LogIn@b62d79</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.LogIn.invalidEmail()'><b>invalidEmail</b><br>Test class: com.nurseryadministrator.testscript.LogIn</td>
+<td></td>
+<td>4</td>
+<td>com.nurseryadministrator.testscript.LogIn@b62d79</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.GroupList.listAndViewGroupDetails()'><b>listAndViewGroupDetails</b><br>Test class: com.nurseryadministrator.testscript.GroupList</td>
+<td></td>
+<td>6</td>
+<td>com.nurseryadministrator.testscript.GroupList@4efc180e</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.LogIn.noCredentials()'><b>noCredentials</b><br>Test class: com.nurseryadministrator.testscript.LogIn</td>
+<td></td>
+<td>4</td>
+<td>com.nurseryadministrator.testscript.LogIn@b62d79</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.LogIn.validCredentials()'><b>validCredentials</b><br>Test class: com.nurseryadministrator.testscript.LogIn</td>
+<td></td>
+<td>13</td>
+<td>com.nurseryadministrator.testscript.LogIn@b62d79</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.Dashboard.verifyDashboard()'><b>verifyDashboard</b><br>Test class: com.nurseryadministrator.testscript.Dashboard</td>
+<td></td>
+<td>0</td>
+<td>com.nurseryadministrator.testscript.Dashboard@2053d869</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.AddGroup.verifyMandatoryMsgVisible()'><b>verifyMandatoryMsgVisible</b><br>Test class: com.nurseryadministrator.testscript.AddGroup</td>
+<td></td>
+<td>1</td>
+<td>com.nurseryadministrator.testscript.AddGroup@32b260fa</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.AddStudent.verifyMandatoryMsgVisible()'><b>verifyMandatoryMsgVisible</b><br>Test class: com.nurseryadministrator.testscript.AddStudent</td>
+<td></td>
+<td>2</td>
+<td>com.nurseryadministrator.testscript.AddStudent@28f2a10f</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.StudentList.verifySortFirstName()'><b>verifySortFirstName</b><br>Test class: com.nurseryadministrator.testscript.StudentList</td>
+<td></td>
+<td>9</td>
+<td>com.nurseryadministrator.testscript.StudentList@611889f4</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.GroupList.verifySortForGroupType()'><b>verifySortForGroupType</b><br>Test class: com.nurseryadministrator.testscript.GroupList</td>
+<td></td>
+<td>8</td>
+<td>com.nurseryadministrator.testscript.GroupList@4efc180e</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.GroupList.verifySortForStatus()'><b>verifySortForStatus</b><br>Test class: com.nurseryadministrator.testscript.GroupList</td>
+<td></td>
+<td>8</td>
+<td>com.nurseryadministrator.testscript.GroupList@4efc180e</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.StudentList.verifySortForStatus()'><b>verifySortForStatus</b><br>Test class: com.nurseryadministrator.testscript.StudentList</td>
+<td></td>
+<td>7</td>
+<td>com.nurseryadministrator.testscript.StudentList@611889f4</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.GroupList.verifySortForTeacher()'><b>verifySortForTeacher</b><br>Test class: com.nurseryadministrator.testscript.GroupList</td>
+<td></td>
+<td>7</td>
+<td>com.nurseryadministrator.testscript.GroupList@4efc180e</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.StudentList.verifySortGroupName()'><b>verifySortGroupName</b><br>Test class: com.nurseryadministrator.testscript.StudentList</td>
+<td></td>
+<td>8</td>
+<td>com.nurseryadministrator.testscript.StudentList@611889f4</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.StudentList.verifySortGroupType()'><b>verifySortGroupType</b><br>Test class: com.nurseryadministrator.testscript.StudentList</td>
+<td></td>
+<td>7</td>
+<td>com.nurseryadministrator.testscript.StudentList@611889f4</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.GroupList.verifySortGrpName()'><b>verifySortGrpName</b><br>Test class: com.nurseryadministrator.testscript.GroupList</td>
+<td></td>
+<td>9</td>
+<td>com.nurseryadministrator.testscript.GroupList@4efc180e</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.StudentList.verifySortLasttName()'><b>verifySortLasttName</b><br>Test class: com.nurseryadministrator.testscript.StudentList</td>
+<td></td>
+<td>8</td>
+<td>com.nurseryadministrator.testscript.StudentList@611889f4</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.StudentList.verifySortParent1Name()'><b>verifySortParent1Name</b><br>Test class: com.nurseryadministrator.testscript.StudentList</td>
+<td></td>
+<td>8</td>
+<td>com.nurseryadministrator.testscript.StudentList@611889f4</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.StudentList.verifySortParent2Name()'><b>verifySortParent2Name</b><br>Test class: com.nurseryadministrator.testscript.StudentList</td>
+<td></td>
+<td>8</td>
+<td>com.nurseryadministrator.testscript.StudentList@611889f4</td></tr>
+<tr>
+<td title='com.nurseryadministrator.testscript.AddStudent.viewStudentDetails()'><b>viewStudentDetails</b><br>Test class: com.nurseryadministrator.testscript.AddStudent</td>
+<td></td>
+<td>8</td>
+<td>com.nurseryadministrator.testscript.AddStudent@28f2a10f</td></tr>
+</table><p>
+</body>
+</html>

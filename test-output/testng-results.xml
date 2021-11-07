@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-10-20T12:01:55 IST" name="Default suite" finished-at="2021-10-20T12:02:23 IST" duration-ms="27703">
+    <groups>
+    </groups>
+    <test started-at="2021-10-20T12:01:55 IST" name="Default test" finished-at="2021-10-20T12:02:23 IST" duration-ms="27703">
+      <class name="com.nurseryadministrator.testscript.LogIn">
+        <test-method is-config="true" signature="start()[pri:0, instance:com.nurseryadministrator.testscript.LogIn@cad498c]" started-at="2021-10-20T12:01:47 IST" name="start" finished-at="2021-10-20T12:01:55 IST" duration-ms="8259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.nurseryadministrator.testscript.LogIn@cad498c]" started-at="2021-10-20T12:01:55 IST" name="initialize" finished-at="2021-10-20T12:01:56 IST" duration-ms="355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="invalidEmail()[pri:1, instance:com.nurseryadministrator.testscript.LogIn@cad498c]" started-at="2021-10-20T12:01:56 IST" name="invalidEmail" finished-at="2021-10-20T12:02:01 IST" duration-ms="4903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidEmail -->
+        <test-method is-config="true" signature="testReportResult(org.testng.ITestResult)[pri:0, instance:com.nurseryadministrator.testscript.LogIn@cad498c]" started-at="2021-10-20T12:02:01 IST" name="testReportResult" finished-at="2021-10-20T12:02:01 IST" duration-ms="271" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidEmail status=SUCCESS method=LogIn.invalidEmail()[pri:1, instance:com.nurseryadministrator.testscript.LogIn@cad498c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReportResult -->
+        <test-method signature="invalidCredentials()[pri:2, instance:com.nurseryadministrator.testscript.LogIn@cad498c]" started-at="2021-10-20T12:02:01 IST" name="invalidCredentials" finished-at="2021-10-20T12:02:07 IST" duration-ms="5601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidCredentials -->
+        <test-method is-config="true" signature="testReportResult(org.testng.ITestResult)[pri:0, instance:com.nurseryadministrator.testscript.LogIn@cad498c]" started-at="2021-10-20T12:02:07 IST" name="testReportResult" finished-at="2021-10-20T12:02:07 IST" duration-ms="297" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidCredentials status=SUCCESS method=LogIn.invalidCredentials()[pri:2, instance:com.nurseryadministrator.testscript.LogIn@cad498c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReportResult -->
+        <test-method signature="noCredentials()[pri:3, instance:com.nurseryadministrator.testscript.LogIn@cad498c]" started-at="2021-10-20T12:02:07 IST" name="noCredentials" finished-at="2021-10-20T12:02:11 IST" duration-ms="4115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- noCredentials -->
+        <test-method is-config="true" signature="testReportResult(org.testng.ITestResult)[pri:0, instance:com.nurseryadministrator.testscript.LogIn@cad498c]" started-at="2021-10-20T12:02:11 IST" name="testReportResult" finished-at="2021-10-20T12:02:11 IST" duration-ms="203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=noCredentials status=SUCCESS method=LogIn.noCredentials()[pri:3, instance:com.nurseryadministrator.testscript.LogIn@cad498c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReportResult -->
+        <test-method signature="validCredentials()[pri:4, instance:com.nurseryadministrator.testscript.LogIn@cad498c]" started-at="2021-10-20T12:02:11 IST" name="validCredentials" finished-at="2021-10-20T12:02:23 IST" duration-ms="11759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validCredentials -->
+        <test-method is-config="true" signature="testReportResult(org.testng.ITestResult)[pri:0, instance:com.nurseryadministrator.testscript.LogIn@cad498c]" started-at="2021-10-20T12:02:23 IST" name="testReportResult" finished-at="2021-10-20T12:02:23 IST" duration-ms="149" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validCredentials status=SUCCESS method=LogIn.validCredentials()[pri:4, instance:com.nurseryadministrator.testscript.LogIn@cad498c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReportResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.nurseryadministrator.testscript.LogIn@cad498c]" started-at="2021-10-20T12:02:23 IST" name="tearDown" finished-at="2021-10-20T12:02:25 IST" duration-ms="1711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.nurseryadministrator.testscript.LogIn -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

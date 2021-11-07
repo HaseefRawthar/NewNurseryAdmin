@@ -1,0 +1,16 @@
+2021-10-20 13:41:21,171  INFO [main] SetUp:99 - Report status initiated
+2021-10-20 13:41:21,349  INFO [main] SetUp:319 - entered getValidCredentialsFromJSONfile
+2021-10-20 13:41:21,357  INFO [main] SetUp:329 - teste1exp@gmail.com
+2021-10-20 13:41:21,358  INFO [main] SetUp:330 - 0pR6Gm
+2021-10-20 13:41:24,695  INFO [main] SetUp:84 - org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=94.0.4606.81)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HASEEF', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\haseef\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50024}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1514db5dc8e7de0a989e3c5e005eeeae
+2021-10-20 13:41:24,794  INFO [main] SetUp:29 - Entered readExcel method
+2021-10-20 13:41:25,127  INFO [main] SetUp:45 - Entered invalidEmail test
+2021-10-20 13:41:25,132  INFO [main] SetUp:45 - Entered getValue method
+2021-10-20 13:41:25,133  INFO [main] SetUp:45 - Entered getValue method
+2021-10-20 13:41:25,133  INFO [main] SetUp:41 - Entered logIn method

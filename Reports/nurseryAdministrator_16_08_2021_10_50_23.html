@@ -1,0 +1,2805 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Automation Report</title>
+        <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+        <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+	    <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7e408aed24af91e1ad76f49a74ecfa0ef1d97cfb/spark/css/spark-style.css" rel="stylesheet" />
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<style type="text/css">
+
+</style></head>    <script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<body class="spa -report standard">
+    <div class="app header-dark side-nav-folded">
+        <div class="layout">
+<div class="header navbar">
+    <div class="header-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li>
+            <a class="sidenav-fold-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class="sidenav-expand-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary">Nursery Administrator-Bounce Report</span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">Aug 16, 2021 10:50:23 AM</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div><div class="side-nav side-nav-folded">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown" onclick="toggleView('test-view')">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown" onclick="toggleView('tag-view')">
+        <a id="nav-tag" class="dropdown-toggle" href="tag.html">
+          <span class="icon-holder">
+            <i class="fa fa-tag"></i>
+          </span>
+          <span class="title">Tags</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>            <div class="page-container">
+                <div class="main-content">
+<div class="test-wrapper row test-view">
+	<div class="test-list">
+		<div class="test-list-tools">
+			<ul class="tools pull-left">
+				<li>
+					<a href="">
+					<span class="font-size-14">Tests</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="tools text-right">
+				<li class="user-profile dropdown dropdown-animated scale-left">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					<i class="fa fa-exclamation-circle"></i>
+					</a>
+					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+						<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
+						
+						
+						
+						
+						
+						<div class="dropdown-divider"></div>
+						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+					</ul>
+				</li>
+				<li class="user-profile dropdown dropdown-animated scale-left">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					<i class="fa fa-tag"></i>
+					</a>
+					<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+						<a class="dropdown-item" href="#">RequestPaymentList</a>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="test-list-wrapper scrollable">
+			<ul class="test-list-item">
+				<li class="test-item"  status="pass" test-id="1"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Status</p>
+							<p class="duration text-sm">0h 0m 5s+91ms</p>
+							<span class="datetime">10:50:40 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Status</h5>
+									<span class='badge badge-success'>08.16.2021 10:50:40</span>
+									<span class='badge badge-danger'>08.16.2021 10:50:46</span>
+									<span class='badge badge-default'>0h 0m 5s+91ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:50:46 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByStatus_16_08_2021_10_50_46.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByStatus_16_08_2021_10_50_46.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="2"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By PaymentName</p>
+							<p class="duration text-sm">0h 0m 3s+222ms</p>
+							<span class="datetime">10:50:46 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By PaymentName</h5>
+									<span class='badge badge-success'>08.16.2021 10:50:46</span>
+									<span class='badge badge-danger'>08.16.2021 10:50:49</span>
+									<span class='badge badge-default'>0h 0m 3s+222ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:50:49 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentName_16_08_2021_10_50_49.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentName_16_08_2021_10_50_49.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="3"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By StudentName</p>
+							<p class="duration text-sm">0h 0m 2s+887ms</p>
+							<span class="datetime">10:50:49 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By StudentName</h5>
+									<span class='badge badge-success'>08.16.2021 10:50:49</span>
+									<span class='badge badge-danger'>08.16.2021 10:50:52</span>
+									<span class='badge badge-default'>0h 0m 2s+887ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:50:52 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByStudentName_16_08_2021_10_50_52.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByStudentName_16_08_2021_10_50_52.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="4"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Same Date</p>
+							<p class="duration text-sm">0h 0m 3s+909ms</p>
+							<span class="datetime">10:50:52 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Same Date</h5>
+									<span class='badge badge-success'>08.16.2021 10:50:52</span>
+									<span class='badge badge-danger'>08.16.2021 10:50:56</span>
+									<span class='badge badge-default'>0h 0m 3s+909ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:50:56 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterBySameDate_16_08_2021_10_50_56.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterBySameDate_16_08_2021_10_50_56.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="5"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Due Date From</p>
+							<p class="duration text-sm">0h 0m 13s+160ms</p>
+							<span class="datetime">10:50:56 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Due Date From</h5>
+									<span class='badge badge-success'>08.16.2021 10:50:56</span>
+									<span class='badge badge-danger'>08.16.2021 10:51:10</span>
+									<span class='badge badge-default'>0h 0m 13s+160ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:51:10 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByDueDateFrom_16_08_2021_10_51_10.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByDueDateFrom_16_08_2021_10_51_10.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="6"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Due Date To</p>
+							<p class="duration text-sm">0h 0m 6s+918ms</p>
+							<span class="datetime">10:51:10 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Due Date To</h5>
+									<span class='badge badge-success'>08.16.2021 10:51:10</span>
+									<span class='badge badge-danger'>08.16.2021 10:51:17</span>
+									<span class='badge badge-default'>0h 0m 6s+918ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:51:17 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByDueDateTo_16_08_2021_10_51_17.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByDueDateTo_16_08_2021_10_51_17.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="7"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Due Date From and Due Date To</p>
+							<p class="duration text-sm">0h 0m 7s+141ms</p>
+							<span class="datetime">10:51:17 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Due Date From and Due Date To</h5>
+									<span class='badge badge-success'>08.16.2021 10:51:17</span>
+									<span class='badge badge-danger'>08.16.2021 10:51:24</span>
+									<span class='badge badge-default'>0h 0m 7s+141ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:51:24 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByDueDateFromAndDueDateTo_16_08_2021_10_51_24.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByDueDateFromAndDueDateTo_16_08_2021_10_51_24.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="8"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">filterByGroupName</p>
+							<p class="duration text-sm">0h 0m 13s+860ms</p>
+							<span class="datetime">10:51:24 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">filterByGroupName</h5>
+									<span class='badge badge-success'>08.16.2021 10:51:24</span>
+									<span class='badge badge-danger'>08.16.2021 10:51:38</span>
+									<span class='badge badge-default'>0h 0m 13s+860ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:51:38 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByGroupName_16_08_2021_10_51_38.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByGroupName_16_08_2021_10_51_38.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="9"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Paymentname And StudentName</p>
+							<p class="duration text-sm">0h 0m 2s+825ms</p>
+							<span class="datetime">10:51:38 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Paymentname And StudentName</h5>
+									<span class='badge badge-success'>08.16.2021 10:51:38</span>
+									<span class='badge badge-danger'>08.16.2021 10:51:41</span>
+									<span class='badge badge-default'>0h 0m 2s+825ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:51:41 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentNameAndStudentName_16_08_2021_10_51_41.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentNameAndStudentName_16_08_2021_10_51_41.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="10"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Paymentname And Group</p>
+							<p class="duration text-sm">0h 0m 6s+493ms</p>
+							<span class="datetime">10:51:41 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Paymentname And Group</h5>
+									<span class='badge badge-success'>08.16.2021 10:51:41</span>
+									<span class='badge badge-danger'>08.16.2021 10:51:48</span>
+									<span class='badge badge-default'>0h 0m 6s+493ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:51:48 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentNameAndGroup_16_08_2021_10_51_48.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentNameAndGroup_16_08_2021_10_51_48.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="11"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Paymentname And Status</p>
+							<p class="duration text-sm">0h 0m 2s+808ms</p>
+							<span class="datetime">10:51:48 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Paymentname And Status</h5>
+									<span class='badge badge-success'>08.16.2021 10:51:48</span>
+									<span class='badge badge-danger'>08.16.2021 10:51:51</span>
+									<span class='badge badge-default'>0h 0m 2s+808ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:51:51 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentNameAndStatus_16_08_2021_10_51_51.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentNameAndStatus_16_08_2021_10_51_51.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="12"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Paymentname And From Date</p>
+							<p class="duration text-sm">0h 0m 3s+38ms</p>
+							<span class="datetime">10:51:51 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Paymentname And From Date</h5>
+									<span class='badge badge-success'>08.16.2021 10:51:51</span>
+									<span class='badge badge-danger'>08.16.2021 10:51:54</span>
+									<span class='badge badge-default'>0h 0m 3s+38ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:51:54 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentNameAndFromDate_16_08_2021_10_51_54.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentNameAndFromDate_16_08_2021_10_51_54.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="13"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Paymentname And To Date</p>
+							<p class="duration text-sm">0h 0m 2s+911ms</p>
+							<span class="datetime">10:51:54 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Paymentname And To Date</h5>
+									<span class='badge badge-success'>08.16.2021 10:51:54</span>
+									<span class='badge badge-danger'>08.16.2021 10:51:57</span>
+									<span class='badge badge-default'>0h 0m 2s+911ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:51:57 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentNameAndToDate_16_08_2021_10_51_57.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentNameAndToDate_16_08_2021_10_51_57.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="14"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By PaymentName And Due Date</p>
+							<p class="duration text-sm">0h 0m 3s+877ms</p>
+							<span class="datetime">10:51:57 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By PaymentName And Due Date</h5>
+									<span class='badge badge-success'>08.16.2021 10:51:57</span>
+									<span class='badge badge-danger'>08.16.2021 10:52:01</span>
+									<span class='badge badge-default'>0h 0m 3s+877ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:52:01 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPymentNameDueDateFromAndDueDateTo_16_08_2021_10_52_01.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPymentNameDueDateFromAndDueDateTo_16_08_2021_10_52_01.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="15"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Group And Status</p>
+							<p class="duration text-sm">0h 0m 4s+104ms</p>
+							<span class="datetime">10:52:01 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Group And Status</h5>
+									<span class='badge badge-success'>08.16.2021 10:52:01</span>
+									<span class='badge badge-danger'>08.16.2021 10:52:05</span>
+									<span class='badge badge-default'>0h 0m 4s+104ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:52:05 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByGroupAndStatus_16_08_2021_10_52_05.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByGroupAndStatus_16_08_2021_10_52_05.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="16"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Group And Due Date</p>
+							<p class="duration text-sm">0h 0m 14s+96ms</p>
+							<span class="datetime">10:52:05 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Group And Due Date</h5>
+									<span class='badge badge-success'>08.16.2021 10:52:05</span>
+									<span class='badge badge-danger'>08.16.2021 10:52:19</span>
+									<span class='badge badge-default'>0h 0m 14s+96ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:52:19 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByDueDateAndGroup_16_08_2021_10_52_19.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByDueDateAndGroup_16_08_2021_10_52_19.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="17"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Student And Status</p>
+							<p class="duration text-sm">0h 0m 3s+368ms</p>
+							<span class="datetime">10:52:20 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Student And Status</h5>
+									<span class='badge badge-success'>08.16.2021 10:52:20</span>
+									<span class='badge badge-danger'>08.16.2021 10:52:23</span>
+									<span class='badge badge-default'>0h 0m 3s+368ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:52:23 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByStudentAndStatus_16_08_2021_10_52_23.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByStudentAndStatus_16_08_2021_10_52_23.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="18"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Student And Date</p>
+							<p class="duration text-sm">0h 0m 4s+303ms</p>
+							<span class="datetime">10:52:23 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Student And Date</h5>
+									<span class='badge badge-success'>08.16.2021 10:52:23</span>
+									<span class='badge badge-danger'>08.16.2021 10:52:27</span>
+									<span class='badge badge-default'>0h 0m 4s+303ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:52:27 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByStudentAndDate_16_08_2021_10_52_27.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByStudentAndDate_16_08_2021_10_52_27.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="19"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Status And Date</p>
+							<p class="duration text-sm">0h 0m 3s+739ms</p>
+							<span class="datetime">10:52:27 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Status And Date</h5>
+									<span class='badge badge-success'>08.16.2021 10:52:27</span>
+									<span class='badge badge-danger'>08.16.2021 10:52:31</span>
+									<span class='badge badge-default'>0h 0m 3s+739ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:52:31 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByStatusAndDate_16_08_2021_10_52_31.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByStatusAndDate_16_08_2021_10_52_31.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="20"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Paymentname,Group And Student</p>
+							<p class="duration text-sm">0h 0m 6s+479ms</p>
+							<span class="datetime">10:52:31 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Paymentname,Group And Student</h5>
+									<span class='badge badge-success'>08.16.2021 10:52:31</span>
+									<span class='badge badge-danger'>08.16.2021 10:52:38</span>
+									<span class='badge badge-default'>0h 0m 6s+479ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:52:38 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentNameGroupAndStudent_16_08_2021_10_52_38.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentNameGroupAndStudent_16_08_2021_10_52_38.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="21"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Paymentname,Group And Status</p>
+							<p class="duration text-sm">0h 0m 4s+142ms</p>
+							<span class="datetime">10:52:38 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Paymentname,Group And Status</h5>
+									<span class='badge badge-success'>08.16.2021 10:52:38</span>
+									<span class='badge badge-danger'>08.16.2021 10:52:42</span>
+									<span class='badge badge-default'>0h 0m 4s+142ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:52:42 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentNameGroupAndStatus_16_08_2021_10_52_42.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentNameGroupAndStatus_16_08_2021_10_52_42.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="22"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By PaymentName,Group And Due Date</p>
+							<p class="duration text-sm">0h 0m 7s+89ms</p>
+							<span class="datetime">10:52:42 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By PaymentName,Group And Due Date</h5>
+									<span class='badge badge-success'>08.16.2021 10:52:42</span>
+									<span class='badge badge-danger'>08.16.2021 10:52:49</span>
+									<span class='badge badge-default'>0h 0m 7s+89ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:52:49 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPymentNameDueDateAndGroup_16_08_2021_10_52_49.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPymentNameDueDateAndGroup_16_08_2021_10_52_49.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="23"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Paymentname,Student And Status</p>
+							<p class="duration text-sm">0h 0m 3s+314ms</p>
+							<span class="datetime">10:52:50 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Paymentname,Student And Status</h5>
+									<span class='badge badge-success'>08.16.2021 10:52:50</span>
+									<span class='badge badge-danger'>08.16.2021 10:52:53</span>
+									<span class='badge badge-default'>0h 0m 3s+314ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:52:53 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentNameStudentAndStatus_16_08_2021_10_52_53.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentNameStudentAndStatus_16_08_2021_10_52_53.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="24"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Paymentname,Student And Date</p>
+							<p class="duration text-sm">0h 0m 4s+343ms</p>
+							<span class="datetime">10:52:53 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Paymentname,Student And Date</h5>
+									<span class='badge badge-success'>08.16.2021 10:52:53</span>
+									<span class='badge badge-danger'>08.16.2021 10:52:57</span>
+									<span class='badge badge-default'>0h 0m 4s+343ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:52:57 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentNameStudentAndDate_16_08_2021_10_52_57.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentNameStudentAndDate_16_08_2021_10_52_57.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="25"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Student,Group And Status</p>
+							<p class="duration text-sm">0h 0m 4s+261ms</p>
+							<span class="datetime">10:52:58 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Student,Group And Status</h5>
+									<span class='badge badge-success'>08.16.2021 10:52:58</span>
+									<span class='badge badge-danger'>08.16.2021 10:53:02</span>
+									<span class='badge badge-default'>0h 0m 4s+261ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:53:02 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByStudentGroupAndStatus_16_08_2021_10_53_02.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByStudentGroupAndStatus_16_08_2021_10_53_02.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="26"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Student,Group And Date</p>
+							<p class="duration text-sm">0h 0m 9s+807ms</p>
+							<span class="datetime">10:53:02 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Student,Group And Date</h5>
+									<span class='badge badge-success'>08.16.2021 10:53:02</span>
+									<span class='badge badge-danger'>08.16.2021 10:53:12</span>
+									<span class='badge badge-default'>0h 0m 9s+807ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:53:12 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByStudentGroupAndDate_16_08_2021_10_53_12.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByStudentGroupAndDate_16_08_2021_10_53_12.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="27"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Group,Status And Date</p>
+							<p class="duration text-sm">0h 0m 4s+897ms</p>
+							<span class="datetime">10:53:12 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Group,Status And Date</h5>
+									<span class='badge badge-success'>08.16.2021 10:53:12</span>
+									<span class='badge badge-danger'>08.16.2021 10:53:17</span>
+									<span class='badge badge-default'>0h 0m 4s+897ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:53:17 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByGroupStatusAndDate_16_08_2021_10_53_17.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByGroupStatusAndDate_16_08_2021_10_53_17.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="28"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Payment name,Student,Group And Status</p>
+							<p class="duration text-sm">0h 0m 4s+774ms</p>
+							<span class="datetime">10:53:17 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Payment name,Student,Group And Status</h5>
+									<span class='badge badge-success'>08.16.2021 10:53:17</span>
+									<span class='badge badge-danger'>08.16.2021 10:53:22</span>
+									<span class='badge badge-default'>0h 0m 4s+774ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:53:22 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentNameStudentGroupAndStatus_16_08_2021_10_53_22.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentNameStudentGroupAndStatus_16_08_2021_10_53_22.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="29"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Payment name,Student,Group And Date</p>
+							<p class="duration text-sm">0h 0m 7s+131ms</p>
+							<span class="datetime">10:53:22 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Payment name,Student,Group And Date</h5>
+									<span class='badge badge-success'>08.16.2021 10:53:22</span>
+									<span class='badge badge-danger'>08.16.2021 10:53:29</span>
+									<span class='badge badge-default'>0h 0m 7s+131ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:53:29 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentNameStudentGroupAndDate_16_08_2021_10_53_29.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentNameStudentGroupAndDate_16_08_2021_10_53_29.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="30"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Student,Group,Status And Date</p>
+							<p class="duration text-sm">0h 0m 5s+271ms</p>
+							<span class="datetime">10:53:29 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Student,Group,Status And Date</h5>
+									<span class='badge badge-success'>08.16.2021 10:53:29</span>
+									<span class='badge badge-danger'>08.16.2021 10:53:35</span>
+									<span class='badge badge-default'>0h 0m 5s+271ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:53:35 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByStudentGroupStatusAndDate_16_08_2021_10_53_35.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByStudentGroupStatusAndDate_16_08_2021_10_53_35.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="31"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Filter By Payment Name,Student,Group,Status And Date</p>
+							<p class="duration text-sm">0h 0m 5s+261ms</p>
+							<span class="datetime">10:53:35 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Filter By Payment Name,Student,Group,Status And Date</h5>
+									<span class='badge badge-success'>08.16.2021 10:53:35</span>
+									<span class='badge badge-danger'>08.16.2021 10:53:40</span>
+									<span class='badge badge-default'>0h 0m 5s+261ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:53:40 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentNameStudentGroupStatusAndDate_16_08_2021_10_53_40.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/filterByPaymentNameStudentGroupStatusAndDate_16_08_2021_10_53_40.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="32"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifySortTitle</p>
+							<p class="duration text-sm">0h 0m 7s+576ms</p>
+							<span class="datetime">10:53:40 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifySortTitle</h5>
+									<span class='badge badge-success'>08.16.2021 10:53:40</span>
+									<span class='badge badge-danger'>08.16.2021 10:53:48</span>
+									<span class='badge badge-default'>0h 0m 7s+576ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:53:48 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/verifySortTitle_16_08_2021_10_53_48.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/verifySortTitle_16_08_2021_10_53_48.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="33"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifySortStudentName</p>
+							<p class="duration text-sm">0h 0m 7s+469ms</p>
+							<span class="datetime">10:53:48 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifySortStudentName</h5>
+									<span class='badge badge-success'>08.16.2021 10:53:48</span>
+									<span class='badge badge-danger'>08.16.2021 10:53:55</span>
+									<span class='badge badge-default'>0h 0m 7s+469ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:53:55 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/verifySortStudentName_16_08_2021_10_53_55.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/verifySortStudentName_16_08_2021_10_53_55.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="34"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifySortDueDate</p>
+							<p class="duration text-sm">0h 0m 7s+235ms</p>
+							<span class="datetime">10:53:55 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifySortDueDate</h5>
+									<span class='badge badge-success'>08.16.2021 10:53:55</span>
+									<span class='badge badge-danger'>08.16.2021 10:54:03</span>
+									<span class='badge badge-default'>0h 0m 7s+235ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:54:03 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/verifySortDueDate_16_08_2021_10_54_03.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/verifySortDueDate_16_08_2021_10_54_03.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="35"
+					author=""
+					tag="RequestPaymentList"
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifySortStatus</p>
+							<p class="duration text-sm">0h 0m 7s+606ms</p>
+							<span class="datetime">10:54:03 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifySortStatus</h5>
+									<span class='badge badge-success'>08.16.2021 10:54:03</span>
+									<span class='badge badge-danger'>08.16.2021 10:54:10</span>
+									<span class='badge badge-default'>0h 0m 7s+606ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> RequestPaymentList</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:54:10 AM</td>
+				<td>
+						Test passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/verifySortStatus_16_08_2021_10_54_10.png' src='C:\Users\haseef\Desktop\Test\NurseryAdministrator/Reports/Screenshots/verifySortStatus_16_08_2021_10_54_10.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="test-content scrollable">
+		<div class="test-content-tools">
+			<ul>
+				<li>
+					<a class="back-to-test" href="javascript:void(0)">
+					<i class="fa fa-arrow-left"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-content-detail">
+			<div class="detail-body"></div>
+		</div>
+	</div>
+</div><div class="test-wrapper row tag-view attributes-view">
+	<div class="test-list">
+		<div class="test-list-tools">
+			<ul class="tools pull-left">
+				<li>
+					<a href="">
+					<span class="font-size-14">Tags</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="tools text-right">
+				<li>
+					<a href="#">
+					<span class="badge badge-primary">1</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-list-wrapper scrollable">
+			<ul class="test-list-item">
+				<li class="test-item">
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">RequestPaymentList</p>
+							<p class="duration text-sm">35 tests</p>
+							<span class="datetime">
+							<span class='badge badge-success'>35</span>
+							
+							
+							
+							</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="info">
+							<h4>RequestPaymentList</h4>
+							<span status="pass" class='badge badge-success'>35 passed</span>
+							
+							
+							
+						</div>
+						<table class='table table-sm mt-4'>
+							<thead>
+								<tr>
+									<th class="status-col">Status</th>
+									<th class="timestamp-col">Timestamp</th>
+									<th>TestName</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:50:40 AM</td>
+									<td class='linked' test-id='1'>
+										Filter By Status
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:50:46 AM</td>
+									<td class='linked' test-id='2'>
+										Filter By PaymentName
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:50:49 AM</td>
+									<td class='linked' test-id='3'>
+										Filter By StudentName
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:50:52 AM</td>
+									<td class='linked' test-id='4'>
+										Filter By Same Date
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:50:56 AM</td>
+									<td class='linked' test-id='5'>
+										Filter By Due Date From
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:51:10 AM</td>
+									<td class='linked' test-id='6'>
+										Filter By Due Date To
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:51:17 AM</td>
+									<td class='linked' test-id='7'>
+										Filter By Due Date From and Due Date To
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:51:24 AM</td>
+									<td class='linked' test-id='8'>
+										filterByGroupName
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:51:38 AM</td>
+									<td class='linked' test-id='9'>
+										Filter By Paymentname And StudentName
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:51:41 AM</td>
+									<td class='linked' test-id='10'>
+										Filter By Paymentname And Group
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:51:48 AM</td>
+									<td class='linked' test-id='11'>
+										Filter By Paymentname And Status
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:51:51 AM</td>
+									<td class='linked' test-id='12'>
+										Filter By Paymentname And From Date
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:51:54 AM</td>
+									<td class='linked' test-id='13'>
+										Filter By Paymentname And To Date
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:51:57 AM</td>
+									<td class='linked' test-id='14'>
+										Filter By PaymentName And Due Date
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:52:01 AM</td>
+									<td class='linked' test-id='15'>
+										Filter By Group And Status
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:52:05 AM</td>
+									<td class='linked' test-id='16'>
+										Filter By Group And Due Date
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:52:20 AM</td>
+									<td class='linked' test-id='17'>
+										Filter By Student And Status
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:52:23 AM</td>
+									<td class='linked' test-id='18'>
+										Filter By Student And Date
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:52:27 AM</td>
+									<td class='linked' test-id='19'>
+										Filter By Status And Date
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:52:31 AM</td>
+									<td class='linked' test-id='20'>
+										Filter By Paymentname,Group And Student
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:52:38 AM</td>
+									<td class='linked' test-id='21'>
+										Filter By Paymentname,Group And Status
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:52:42 AM</td>
+									<td class='linked' test-id='22'>
+										Filter By PaymentName,Group And Due Date
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:52:50 AM</td>
+									<td class='linked' test-id='23'>
+										Filter By Paymentname,Student And Status
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:52:53 AM</td>
+									<td class='linked' test-id='24'>
+										Filter By Paymentname,Student And Date
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:52:58 AM</td>
+									<td class='linked' test-id='25'>
+										Filter By Student,Group And Status
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:53:02 AM</td>
+									<td class='linked' test-id='26'>
+										Filter By Student,Group And Date
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:53:12 AM</td>
+									<td class='linked' test-id='27'>
+										Filter By Group,Status And Date
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:53:17 AM</td>
+									<td class='linked' test-id='28'>
+										Filter By Payment name,Student,Group And Status
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:53:22 AM</td>
+									<td class='linked' test-id='29'>
+										Filter By Payment name,Student,Group And Date
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:53:29 AM</td>
+									<td class='linked' test-id='30'>
+										Filter By Student,Group,Status And Date
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:53:35 AM</td>
+									<td class='linked' test-id='31'>
+										Filter By Payment Name,Student,Group,Status And Date
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:53:40 AM</td>
+									<td class='linked' test-id='32'>
+										verifySortTitle
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:53:48 AM</td>
+									<td class='linked' test-id='33'>
+										verifySortStudentName
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:53:55 AM</td>
+									<td class='linked' test-id='34'>
+										verifySortDueDate
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>10:54:03 AM</td>
+									<td class='linked' test-id='35'>
+										verifySortStatus
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="test-content scrollable">
+		<div class="test-content-tools">
+			<ul>
+				<li>
+					<a class="back-to-test" href="javascript:void(0)">
+					<i class="fa fa-arrow-left"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-content-detail">
+			<div class="detail-body"></div>
+		</div>
+	</div>
+</div>                    <!-- dashboard -->
+<div class="container-fluid p-4 dashboard-view">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Tests</h6>
+				</div>
+				<div class="card-body">
+					<div class="">
+						<canvas id='parent-analysis' width='115' height='90'></canvas>
+					</div>
+				</div>
+				<div class="card-footer">
+					<div><small data-tooltip='100%'>
+						<b>35</b> tests passed
+						</small>
+					</div>
+					<div>
+						<small data-tooltip='0%'><b>0</b> tests failed, 
+						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+						</small>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Log events</h6>
+				</div>
+				<div class="card-body">
+					<div class="">
+						<canvas id='events-analysis' width='115' height='90'></canvas>
+					</div>
+				</div>
+				<div class="card-footer">
+					<div><small data-tooltip='100%'><b>35</b> events passed</small></div>
+					<div>
+						<small data-tooltip='0%'><b>0</b> events failed, 
+						<b data-tooltip='0%'>0</b> others
+						</small>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+					<div class="media justify-content-between">
+						<div class="card-header">
+							<h6 class="card-title">Tests</h6>
+							<h2 class="font-size-28 font-weight-light mt-3">35</h2>
+							<span class="text-semibold text-success font-size-15">
+							<i class="ti-arrow-up font-size-11"></i> 
+							<span>100.00%</span>
+							</span>
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-align-left font-size-70 opacity-01"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+					<div class="media justify-content-between">
+						<div class="card-header">
+							<h6 class="card-title">Start</h6>
+							<h4 class="font-weight-light mt-4">Aug 16, 2021 10:50:23 AM</h4>
+							<span class="text-semibold text-success font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-success opacity-01"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+					<div class="media justify-content-between">
+						<div class="card-header">
+							<h6 class="card-title">Duration</h6>
+							<h4 class="font-weight-light mt-4">0h 3m 47s+509ms</h4>
+							<span class="text-semibold font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 opacity-01"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Timeline</h6>
+				</div>
+				<div class="card-body">
+					<div class="">
+						<canvas id="timeline" height="120"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Tags</h6>
+				</div>
+				<div class="table-overflow">
+					<table class="table table-sm">
+						<thead>
+							<tr class="bg-gray">
+								<th>Name</th>
+								<th>Passed</th>
+								<th>Failed</th>
+								<th>Others</th>
+								<th>Passed %</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>RequestPaymentList</td>
+								<td>35</td>
+								<td>0</td>
+								<td>0</td>
+								<td>
+									100%
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Environment</h6>
+				</div>
+				<div class="table-overflow">
+					<table class="table table-sm">
+						<thead>
+							<tr class="bg-gray">
+								<th>Name</th>
+								<th>Value</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Project Name</td>
+								<td>Nursery Administrator</td>
+							</tr>
+							<tr>
+								<td>Platform</td>
+								<td>Windows 10</td>
+							</tr>
+							<tr>
+								<td>Environment</td>
+								<td>QA</td>
+							</tr>
+							<tr>
+								<td>Browser</td>
+								<td>Google chrome</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	var statusGroup = {
+	    parentCount: 35,
+		passParent: 35,
+		failParent: 0,
+		fatalParent: 0,
+		errorParent: 0,
+		warningParent: 0,
+		skipParent: 0,
+		exceptionsParent: 0,
+		childCount: 0,
+		passChild: 0,
+		failChild: 0,
+		fatalChild: 0,
+		errorChild: 0,
+		warningChild: 0,
+		skipChild: 0,
+		infoChild: 0,
+		debugChild: 0,
+		exceptionsChild: 0,
+		grandChildCount: 0,
+		passGrandChild: 0,
+		failGrandChild: 0,
+		fatalGrandChild: 0,
+		errorGrandChild: 0,
+		warningGrandChild: 0,
+		skipGrandChild: 0,
+		infoGrandChild: 0,
+		debugGrandChild: 0,
+		exceptionsGrandChild: 0,
+		eventsCount: 35,
+		passEvents: 35,
+		failEvents: 0,
+		fatalEvents: 0,
+		errorEvents: 0,
+		warningEvents: 0,
+		skipEvents: 0,
+		infoEvents: 0,
+		debugEvents: 0,
+		exceptionsEvents: 0
+	};
+</script>
+<script>
+	var timeline = {
+	        "Filter By Status":5.091,"Filter By PaymentName":3.222,"Filter By StudentName":2.887,"Filter By Same Date":3.909,"Filter By Due Date From":13.16,"Filter By Due Date To":6.918,"Filter By Due Date From and Due Date To":7.141,"filterByGroupName":13.86,"Filter By Paymentname And StudentName":2.825,"Filter By Paymentname And Group":6.493,"Filter By Paymentname And Status":2.808,"Filter By Paymentname And From Date":3.038,"Filter By Paymentname And To Date":2.911,"Filter By PaymentName And Due Date":3.877,"Filter By Group And Status":4.104,"Filter By Group And Due Date":14.096,"Filter By Student And Status":3.368,"Filter By Student And Date":4.303,"Filter By Status And Date":3.739,"Filter By Paymentname,Group And Student":6.479,"Filter By Paymentname,Group And Status":4.142,"Filter By PaymentName,Group And Due Date":7.089,"Filter By Paymentname,Student And Status":3.314,"Filter By Paymentname,Student And Date":4.343,"Filter By Student,Group And Status":4.261,"Filter By Student,Group And Date":9.807,"Filter By Group,Status And Date":4.897,"Filter By Payment name,Student,Group And Status":4.774,"Filter By Payment name,Student,Group And Date":7.131,"Filter By Student,Group,Status And Date":5.271,"Filter By Payment Name,Student,Group,Status And Date":5.261,"verifySortTitle":7.576,"verifySortStudentName":7.469,"verifySortDueDate":7.235,"verifySortStatus":7.606
+	};
+</script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ac7abbc71b4bb073da00153a5a3fdbcfe0c95e2a/spark/js/spark-script.js"></script>
+<script type="text/javascript">
+
+
+</script></body>
+</html>

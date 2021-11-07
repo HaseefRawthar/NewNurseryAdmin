@@ -1,0 +1,148 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
+ <test name="Login" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.LogIn">
+      </class>
+    </classes>
+  </test>
+   <test name="Dashboard" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.Dashboard">
+      </class>
+    </classes>
+  </test>
+   <test name="Add Group" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.AddGroup">
+      <methods>
+      <include name="verifyMandatoryMsgVisible"></include>
+      <include name="addBabiesGroup"></include>
+      <include name="addToddlersGroup"></include>
+      <include name="addPreKGGroup"></include>
+      </methods>
+      </class>
+    </classes>
+  </test>
+   <test name="Group List" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.GroupList">
+      </class>
+    </classes>
+  </test>
+  <test name="Add Group - add employees and students" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.AddGroup">
+      <methods>
+      <include name="assignStudentsAndEmployees"></include>
+      </methods>
+      </class>
+    </classes>
+  </test>
+   <test name="Add Student" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.AddStudent">
+      </class>
+    </classes>
+  </test>
+   <test name="Student List" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.StudentList">
+      </class>
+    </classes>
+  </test>
+   <test name="Add Employee" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.AddEmployee">
+      </class>
+    </classes>
+  </test>
+  <test name="List Teacher Details" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.TeacherList">
+      </class>
+    </classes>
+  </test>
+   <test name="List Nurse Details" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.NurseList">
+      </class>
+    </classes>
+  </test>
+   <test name="List Assistant Details" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.AssistantList">
+      </class>
+    </classes>
+  </test>
+   <test name="Create Payment Request" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.RequestPayment">
+      </class>
+    </classes>
+  </test>
+   <test name="Payment Request List" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.PaymentRequestList">
+      </class>
+    </classes>
+  </test>
+   <test name="Add Group - delete students and employees" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.AddGroup">
+      <methods>
+      <include name="deleteStudentsAndEmployees"></include>
+      </methods>
+      </class>
+    </classes>
+  </test>
+   <test name="Add Admin" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.AddNurseryAdmin">
+      </class>
+    </classes>
+  </test>
+   <test name="List Admin" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.AdminList">
+      </class>
+    </classes>
+  </test>
+   <test name="1day Access" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.GrantTemporaryAdminAccess">
+      <methods>
+      <include name="grantAdminaccessfor1day"></include>
+       <include name="revokeAdminaccess"></include>
+      </methods>
+      </class>
+    </classes>
+  </test>
+   <test name="3 day Access" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.GrantTemporaryAdminAccess">
+      <methods>
+      <include name="grantAdminaccessfor3day"></include>
+        <include name="revokeAdminaccess"></include>
+        
+      </methods>
+      </class>
+    </classes>
+  </test>
+    <test name="1week Access" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.GrantTemporaryAdminAccess">
+      <methods>
+      <include name="grantAdminaccessfor1Week"></include>
+       <include name="revokeAdminaccess"></include>
+      </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="Edit Profile" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.EditProfile">
+      </class>
+    </classes>
+  </test>
+</suite>

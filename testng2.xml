@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
+
+     <test name="1day Access" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.GrantTemporaryAdminAccess">
+      <methods>
+      <include name="grantAdminaccessfor1day"></include>
+       <include name="revokeAdminaccess"></include>
+      </methods>
+      </class>
+    </classes>
+  </test>
+   <test name="3 day Access" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.GrantTemporaryAdminAccess">
+      <methods>
+      <include name="grantAdminaccessfor3day"></include>
+        <include name="revokeAdminaccess"></include>
+        
+      </methods>
+      </class>
+    </classes>
+  </test>
+    <test name="1week Access" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.GrantTemporaryAdminAccess">
+      <methods>
+      <include name="grantAdminaccessfor1Week"></include>
+       <include name="revokeAdminaccess"></include>
+      </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="online revenue report" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.NurseryOnlineRevenueReport">
+      </class>
+    </classes>
+  </test>
+
+ 
+  </suite>

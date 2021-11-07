@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
+<test name="group filter" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.GroupListFilter">
+      </class>
+    </classes>
+  </test>
+  <test name="student filter" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.StudentListFilter">
+      </class>
+    </classes>
+  </test>
+  <test name="payment filter" >
+    <classes>
+      <class name="com.nurseryadministrator.testscript.PaymentRequestList">
+      </class>
+    </classes>
+  </test>
+  </suite>
